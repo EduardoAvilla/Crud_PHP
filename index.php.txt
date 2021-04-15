@@ -245,9 +245,7 @@ if (isset($_REQUEST["act"]) && $_REQUEST["act"] == "del" && $id != "") {
                             </thead>
                             <tbody>
                                 <?php
-                                /**
-                                 *  Bloco que realiza o papel do Read - recupera os dados e apresenta na tela
-                                 */
+                              
                                 try {
                                     $stmt = $conexao->prepare("SELECT * FROM contatos");
                                     if ($stmt->execute()) {
